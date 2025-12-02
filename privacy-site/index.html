@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Black it out — Privacy Policy</title>
+    <style>
+      :root {
+        font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        color: #0f172a;
+        background: #f8fafc;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2.5rem 1.5rem 3rem;
+        line-height: 1.6;
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: 2rem;
+        color: #111827;
+      }
+
+      h2 {
+        margin-top: 2rem;
+        font-size: 1.25rem;
+        color: #1f2937;
+      }
+
+      p,
+      li {
+        color: #334155;
+      }
+
+      ul {
+        padding-left: 1.25rem;
+      }
+
+      footer {
+        margin-top: 2.5rem;
+        font-size: 0.9rem;
+        color: #64748b;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Black it out — Privacy Policy</h1>
+      <p><strong>Effective date:</strong> <span id="effective-date">2025-12-02</span></p>
+
+      <p>
+        Black it out is a Chrome extension that lets you toggle a universal dark theme for any
+        website you visit. This page explains what data (if any) the extension collects, how it uses
+        that data, and the permissions required to deliver its functionality.
+      </p>
+
+      <h2>Information We Collect</h2>
+      <ul>
+        <li>
+          <strong>Dark mode preference.</strong> We store a single boolean flag
+          (<code>true</code>/<code>false</code>) using <code>chrome.storage.sync</code> to remember if
+          you last left the switch in the “on” position. No browsing history, page content, or
+          personal identifiers are collected.
+        </li>
+        <li>
+          <strong>No external analytics.</strong> The extension does not send any information to our
+          servers or to third-party analytics providers.
+        </li>
+      </ul>
+
+      <h2>How We Use the Information</h2>
+      <p>The stored preference is used solely to:</p>
+      <ul>
+        <li>Reapply the dark theme automatically when Chrome restarts or when you open new tabs.</li>
+        <li>Keep the popup switch in sync across your Chrome profiles (via Chrome Sync).</li>
+      </ul>
+
+      <h2>Data Sharing</h2>
+      <p>
+        We do not share, sell, or transfer any data collected by Black it out. The extension operates
+        entirely on your device using the permissions granted by Chrome.
+      </p>
+
+      <h2>Why We Request Permissions</h2>
+      <ul>
+        <li>
+          <strong>storage</strong> – needed to persist the single on/off preference via
+          <code>chrome.storage.sync</code>.
+        </li>
+        <li>
+          <strong>scripting</strong> – lets the extension inject or remove its bundled dark-theme CSS
+          in the active tab.
+        </li>
+        <li>
+          <strong>tabs</strong> – used to determine which open tabs are standard web pages so the dark
+          stylesheet can be applied or removed as you toggle the switch.
+        </li>
+        <li>
+          <strong>host permissions (&lt;all_urls&gt;)</strong> – required because you may choose to
+          apply dark mode on any site, and the extension needs access to inject CSS into arbitrary
+          domains.
+        </li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>
+        If you have questions about this policy or the extension, please email us at
+        <a href="mailto:REPLACE_WITH_CONTACT_EMAIL">REPLACE_WITH_CONTACT_EMAIL</a>.
+      </p>
+
+      <footer>
+        We may update this privacy policy if our data practices change. The latest version will
+        always be available on this page.
+      </footer>
+    </main>
+  </body>
+</html>
+
